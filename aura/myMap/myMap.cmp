@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="myMapApexController">
+    <!-- Loading CSS first-->
+    <ltng:require styles="/resource/leaflet/leaflet.css" afterScriptsLoaded="{!c.leafloaded}"/>
+    <ltng:require styles="{!$Resource.fontawesomezip+'/font-awesome/css/font-awesome.css'}" afterScriptsLoaded="{!c.faloaded}"/>
+
+    <ltng:require scripts="/resource/leaflet/leaflet.js"
+             afterScriptsLoaded="{!c.jsLoaded}" />
+
+    <div class="map" id="map"></div>
+</aura:component>
